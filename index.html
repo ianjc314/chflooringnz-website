@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CH Flooring</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">CH FLOORING</a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg">
+            <!-- Placeholder for Hero Image -->
+            <div class="placeholder-hero"></div> 
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="fade-in-up">The most reliable flooring service</h1>
+            <p class="fade-in-up delay-1">With over 20 years of experience, we provide quality work without any extra charges.</p>
+            <div class="hero-btns fade-in-up delay-2">
+                <a href="#gallery" class="btn-primary">View Our Work</a>
+                <a href="#contact" class="btn-outline">Get a Free Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Work</h2>
+                <p>Explore our recent flooring projects</p>
+            </div>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="hardwood">Hardwood</button>
+                <button class="filter-btn" data-filter="laminate">Laminate</button>
+                <button class="filter-btn" data-filter="installation">Installation</button>
+            </div>
+
+            <div class="gallery-grid" data-limit="6"></div>
+            
+            <div class="gallery-view-more">
+                <a href="gallery.html" class="btn-primary">View the full gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2>Customer Reviews</h2>
+                <p>What our customers are saying</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <p class="review-text">"I have used CH Flooring 3 times now for a variety of flooring jobs and Chang has always been excellent. He is quick to reply, quote and sticks to schedule. He can assist with organizing everything from floor sanding and recoating, repairing floorboards in villas, or installing new hardwood floors or carpets. Highly recommended and well respected by all the trades he works with."</p>
+                    <div class="reviewer">
+                        <div class="info">
+                            <h4>w*****g</h4>
+                            <span>Review from Trade Me</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Chang did two jobs at my place (new carpet installation and wooden flooring). His quality of work and speed is awesome. He and his team both so cool to get things done nicely, tidy and superb. I would strongly recommend him. His prices are also reasonable so it’s win win from all angle. I would always go with him in future."</p>
+                    <div class="reviewer">
+                        <div class="info">
+                            <h4>s****0</h4>
+                            <span>Review from Trade Me</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Chang is your must have choice. 1. Detail Leveling of the floor, any little dent of timber floor, Chang is taking very carefull and detail. He is too fussy for my floors. 2. Communication Chang is very easy to work and knows what the owners wish without telling him. My lounge got tricky points for installation, but Chang found the best solution up to my satisfaction. 3. Price Too cheap for this top quality. His after service is perfect. He is best money saver for the flooring."</p>
+                    <div class="reviewer">
+                        <div class="info">
+                            <h4>j****u</h4>
+                            <span>Review from Trade Me</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Let's Get In Touch!</h2>
+                    <p>Send an email or give us a call for enquires or to request for a free quotation.</p>
+                    <div class="contact-item">
+                        <span class="icon">📞</span>
+                        <a href="tel:0220429005">022-042-9005</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">✉️</span>
+                        <a href="mailto:chflooringnz@gmail.com">chflooringnz@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+    </div>
+
+</body>
+</html>
